@@ -1,0 +1,157 @@
+{
+  "model_type": "Ensemble (Voting Meta-Model) (Best of 10 Tournament)",
+  "models_count": 10,
+  "features": [
+    "R&D Spend",
+    "Administration",
+    "Marketing Spend"
+  ],
+  "target": "Profit",
+  "trained_at": "2026-09-12 05:15:19",
+  "training_samples": 50,
+  "best_model_metrics": {
+    "r2_mean": 0.9425,
+    "r2_std": 0.0332,
+    "mae_mean": 6736.41,
+    "rmse_mean": 8751.28
+  },
+  "all_model_benchmarks": {
+    "Ensemble (Voting Meta-Model)": {
+      "r2_mean": 0.9425,
+      "r2_std": 0.0332,
+      "mae_mean": 6736.41,
+      "rmse_mean": 8751.28
+    },
+    "Gradient Boosting (GBM)": {
+      "r2_mean": 0.9264,
+      "r2_std": 0.0334,
+      "mae_mean": 8048.53,
+      "rmse_mean": 10051.08
+    },
+    "Random Forest Regressor": {
+      "r2_mean": 0.9289,
+      "r2_std": 0.0424,
+      "mae_mean": 7519.45,
+      "rmse_mean": 9598.75
+    },
+    "Extra Trees Regressor": {
+      "r2_mean": 0.9418,
+      "r2_std": 0.0343,
+      "mae_mean": 6350.17,
+      "rmse_mean": 8740.36
+    },
+    "Ridge Regression (L2)": {
+      "r2_mean": 0.9326,
+      "r2_std": 0.042,
+      "mae_mean": 7092.66,
+      "rmse_mean": 9258.66
+    },
+    "Bayesian Ridge Regressor": {
+      "r2_mean": 0.9338,
+      "r2_std": 0.0404,
+      "mae_mean": 7001.72,
+      "rmse_mean": 9175.68
+    },
+    "Lasso Regression (L1)": {
+      "r2_mean": 0.9341,
+      "r2_std": 0.0399,
+      "mae_mean": 7008.35,
+      "rmse_mean": 9165.0
+    },
+    "ElasticNet Regression": {
+      "r2_mean": 0.8951,
+      "r2_std": 0.0467,
+      "mae_mean": 9194.88,
+      "rmse_mean": 12076.62
+    },
+    "Support Vector Regression (SVR)": {
+      "r2_mean": 0.1025,
+      "r2_std": 0.0621,
+      "mae_mean": 27527.02,
+      "rmse_mean": 36231.0
+    },
+    "K-Nearest Neighbors (KNN)": {
+      "r2_mean": 0.797,
+      "r2_std": 0.1356,
+      "mae_mean": 12473.46,
+      "rmse_mean": 15934.19
+    }
+  },
+  "leaderboard": [
+    {
+      "rank": "\ud83e\udd47 ",
+      "name": "Ensemble (Voting Meta-Model)",
+      "r2": 0.9425,
+      "mae": 6736.41,
+      "rmse": 8751.28
+    },
+    {
+      "rank": "\ud83e\udd48 ",
+      "name": "Extra Trees Regressor",
+      "r2": 0.9418,
+      "mae": 6350.17,
+      "rmse": 8740.36
+    },
+    {
+      "rank": "\ud83e\udd49 ",
+      "name": "Lasso Regression (L1)",
+      "r2": 0.9341,
+      "mae": 7008.35,
+      "rmse": 9165.0
+    },
+    {
+      "rank": "#4 ",
+      "name": "Bayesian Ridge Regressor",
+      "r2": 0.9338,
+      "mae": 7001.72,
+      "rmse": 9175.68
+    },
+    {
+      "rank": "#5 ",
+      "name": "Ridge Regression (L2)",
+      "r2": 0.9326,
+      "mae": 7092.66,
+      "rmse": 9258.66
+    },
+    {
+      "rank": "#6 ",
+      "name": "Random Forest Regressor",
+      "r2": 0.9289,
+      "mae": 7519.45,
+      "rmse": 9598.75
+    },
+    {
+      "rank": "#7 ",
+      "name": "Gradient Boosting (GBM)",
+      "r2": 0.9264,
+      "mae": 8048.53,
+      "rmse": 10051.08
+    },
+    {
+      "rank": "#8 ",
+      "name": "ElasticNet Regression",
+      "r2": 0.8951,
+      "mae": 9194.88,
+      "rmse": 12076.62
+    },
+    {
+      "rank": "#9 ",
+      "name": "K-Nearest Neighbors (KNN)",
+      "r2": 0.797,
+      "mae": 12473.46,
+      "rmse": 15934.19
+    },
+    {
+      "rank": "#10 ",
+      "name": "Support Vector Regression (SVR)",
+      "r2": 0.1025,
+      "mae": 27527.02,
+      "rmse": 36231.0
+    }
+  ],
+  "feature_importances": {
+    "R&D Spend": 0.930143619242487,
+    "Administration": 0.008798618431308549,
+    "Marketing Spend": 0.06105776232620442
+  }
+}

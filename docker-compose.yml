@@ -1,0 +1,24 @@
+services:
+  streamlit-ui:
+    build: .
+    container_name: profit-predictor-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./models/artifacts:/app/models/artifacts
+
+  fastapi-backend:
+    build: .
+    container_name: profit-predictor-api
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    volumes:
+      - ./models/artifacts:/app/models/artifacts

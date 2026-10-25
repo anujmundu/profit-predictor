@@ -2,6 +2,3 @@ __pycache__/
 *.pkl
 *.pyc
 .streamlit/secrets.toml
-.venv/
-venv/
-.pytest_cache/
